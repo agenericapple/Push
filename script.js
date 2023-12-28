@@ -1,4 +1,5 @@
-function check() {
+async function check() {
+  console.log("starting check")
   if ('serviceWorker' in navigator) {
     console.log("Service Worker is supported and starting");
   } else {
@@ -7,6 +8,7 @@ function check() {
 }
 
 function register() {
+  onsole.log("starting registration")
   const registration = await navigator.serviceWorker.register('async function check() {
       if ('serviceWorker' in navigator) {
         console.log("Service Worker is supported and starting");
